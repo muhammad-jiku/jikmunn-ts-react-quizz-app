@@ -3,7 +3,7 @@ import { fetchQuizQuestions } from './API';
 // Components
 import QCard from './components/QCard';
 // types
-import { QuestionsState, Difficulty } from './API';
+import { QuestionsState } from './API';
 // Styles
 import { GlobalStyle, Wrapper } from './App.styles';
 
@@ -76,7 +76,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <h1>Test Yourself!</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
             Start
